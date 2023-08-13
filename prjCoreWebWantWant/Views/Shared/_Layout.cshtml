@@ -7,8 +7,7 @@
     <title>@ViewData["Title"] - WantWant - 專家接案，打工兼差</title>
 
     <!--== Icofont Icon CSS ==-->
-    <link href="~/Mstyles/icofont.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="~/Mstyles/icofont.css" />
 
     <link rel="stylesheet" href="~/Mstyles/Mbootstrap.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Mstyles/style.css" asp-append-version="true" />
@@ -28,7 +27,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">                        
+                    <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">首頁</a>
                         </li>
@@ -42,7 +41,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">部落格</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ml-auto">                       
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">會員專區</a>
                         </li>
@@ -57,10 +56,10 @@
             </div>
         </nav>
     </header>
-@*    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    @*    <div class="container">
+    <main role="main" class="pb-3">
+    @RenderBody()
+    </main>
     </div>*@
     @RenderBody()
     <footer id="footer" class="pt-5 bg-color text-white">

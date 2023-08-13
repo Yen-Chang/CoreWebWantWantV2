@@ -645,7 +645,7 @@ h3 {
 }
 
 /* line 10, ../../Arafath/CL/December/235. Job board/HTML/scss/_section_title.scss */
-.section_title h3 {
+.section_title{
   font-size: 38px;
   font-weight: 400;
   color: #001D38;

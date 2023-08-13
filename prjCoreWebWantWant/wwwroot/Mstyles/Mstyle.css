@@ -97,6 +97,74 @@ footer ul {
     color: #528EAF;
 }
 
+.btn-theme {
+    background-color: #528EAF;
+    border: 1px solid #528EAF;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    padding: 8px 35px 8px;
+    text-align: center;
+}
+
+.team-item .content .sub-title {
+    color: #528EAF;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.btn-theme.btn-white {
+    background-color: #fff;
+    border: 1px solid #528EAF;
+    color: #528EAF;
+}
+
+    .btn-theme.btn-white:hover {
+        background-color: #528EAF;
+        border-color: #528EAF;
+        color: #fff;
+    }
+
+.team-item .content .title a {
+    color: #656565;
+}
+
+.team-item .content .title {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.team-item .content .desc {
+    font-size: 15px;
+    line-height: 1.87;
+    margin-bottom: 24px;
+}
+
+.team-item:hover {
+    background-color: #fff;
+    border-color: #90B6D8;
+}
+
+body {
+    color: #656565;
+    font-size: 16px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    margin: 0;
+    overflow-x: hidden;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.btn-theme.btn-sm {
+    height: 38px;
+    padding: 4px 5px 6px;
+    width: 110px;
+}
+
 .bg-light {
     background-color: #fff;
 }
@@ -236,4 +304,12 @@ a:link {
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #528EAF;
     --bs-gradient: none;
+}
+
+.job_listing_area .job_lists .single_jobs .jobs_left .jobs_conetent h4:hover {
+    color: #528EAF;
+}
+
+.text-uppercase{
+    color:#FFF;
 }
