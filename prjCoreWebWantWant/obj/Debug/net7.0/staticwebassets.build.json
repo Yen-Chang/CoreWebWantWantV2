@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CrNGyH52HL49NposuhdxJr+7OTo2eN/bYMSf6w9Rd5w=",
+  "Hash": "PbRO6zs3UDJmTxOtnjYbMZI4mkMTNKx5ZeN58Gc9Rjg=",
   "Source": "prjCoreWebWantWant",
   "BasePath": "_content/prjCoreWebWantWant",
   "Mode": "Default",
@@ -1122,6 +1122,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\3.jpg"
     },
     {
+      "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\33.jpg",
+      "SourceId": "prjCoreWebWantWant",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\",
+      "BasePath": "_content/prjCoreWebWantWant",
+      "RelativePath": "Images/33.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\33.jpg"
+    },
+    {
       "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\4.jpg",
       "SourceId": "prjCoreWebWantWant",
       "SourceType": "Discovered",
@@ -1139,6 +1156,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\4.jpg"
     },
     {
+      "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\44.jpg",
+      "SourceId": "prjCoreWebWantWant",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\",
+      "BasePath": "_content/prjCoreWebWantWant",
+      "RelativePath": "Images/44.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\44.jpg"
+    },
+    {
       "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\5.jpg",
       "SourceId": "prjCoreWebWantWant",
       "SourceType": "Discovered",
@@ -1154,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\5.jpg"
+    },
+    {
+      "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\55.jpg",
+      "SourceId": "prjCoreWebWantWant",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\",
+      "BasePath": "_content/prjCoreWebWantWant",
+      "RelativePath": "Images/55.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\55.jpg"
     },
     {
       "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\6.jpg",
@@ -1224,12 +1275,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\LOGO.png"
     },
     {
-      "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\main_title.png",
+      "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\main-title.jpg",
       "SourceId": "prjCoreWebWantWant",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\",
       "BasePath": "_content/prjCoreWebWantWant",
-      "RelativePath": "Images/main_title.png",
+      "RelativePath": "Images/main-title.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1238,7 +1289,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\main_title.png"
+      "OriginalItemSpec": "wwwroot\\Images\\main-title.jpg"
     },
     {
       "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\js\\site.js",
@@ -2227,6 +2278,23 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Mstyles\\Carousel.css",
+      "SourceId": "prjCoreWebWantWant",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\",
+      "BasePath": "_content/prjCoreWebWantWant",
+      "RelativePath": "Mstyles/Carousel.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Mstyles\\Carousel.css"
+    },
+    {
       "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Mstyles\\icofont.css",
       "SourceId": "prjCoreWebWantWant",
       "SourceType": "Discovered",
@@ -2242,6 +2310,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Mstyles\\icofont.css"
+    },
+    {
+      "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Mstyles\\Jstyle.css",
+      "SourceId": "prjCoreWebWantWant",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\",
+      "BasePath": "_content/prjCoreWebWantWant",
+      "RelativePath": "Mstyles/Jstyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Mstyles\\Jstyle.css"
     },
     {
       "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Mstyles\\Mbootstrap.css",

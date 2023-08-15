@@ -2,12 +2,21 @@
     ViewData["Title"] = "Home Page";
 }
 
+@section Styles{
+    <link rel="stylesheet" href="~/Mstyles/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Mstyles/Carousel.css" asp-append-version="true" />
+}
+
 <!-- main-title start -->
-<section class="main-title-section text-center py-3" style="background-image: url('@Url.Content("~/Image/main_title.png")');">
+<section class="main-title-section text-center py-3">
     <div class="container">
-        <div class="row g-2">
-            <div class="col-md-4">
-                <h1>開啟自由工作之旅，你的選擇，無限可能。</h1>                
+        <div class="row align-items-center">
+            <div class="col-md-4 text-start">
+                <h1>開啟自由工作之旅，你的選擇，無限可能。</h1>
+            </div>
+            <div class="col-md-8">
+                <img src="@Url.Content("~/Images/main-title.jpg")" alt="My Image" class="img-width" />
+            </div>
                 @*<div class="container">
                 <div class="col-md-4">
                 <a>@Html.ActionLink("找專家", "Index", "Home", new { area = "" }, new { @class = "a" })</a>
@@ -106,7 +115,7 @@
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div class="single_jobs white-bg d-flex justify-content-between">
-                            <div class="jobs_left d-flex align-items-center">      
+                            <div class="jobs_left d-flex align-items-center">
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Digital Marketer</h4></a>
                                     <div class="links_locat d-flex align-items-center">
@@ -160,7 +169,7 @@
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div class="single_jobs white-bg d-flex justify-content-between">
-                            <div class="jobs_left d-flex align-items-center"> 
+                            <div class="jobs_left d-flex align-items-center">
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Visual Designer</h4></a>
                                     <div class="links_locat d-flex align-items-center">
@@ -175,7 +184,7 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                  @*  <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
+                                    @*  <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
                                     <a href="job_details.html" class="boxed-btn3">Apply Now</a>*@
                                     <a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>
                                 </div>
@@ -214,7 +223,7 @@
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div class="single_jobs white-bg d-flex justify-content-between">
-                            <div class="jobs_left d-flex align-items-center"> 
+                            <div class="jobs_left d-flex align-items-center">
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Creative Designer</h4></a>
                                     <div class="links_locat d-flex align-items-center">
@@ -265,7 +274,7 @@
                                  width="160"
                                  height="160"
                                  alt="Image-HasTech" />
-                        </a>                       
+                        </a>
                     </div>
                     <div class="content">
                         <h4 class="title">
@@ -282,8 +291,8 @@
                         <p class="desc">
                             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                         </p>
-               @*         <a class="btn-theme btn-white btn-sm"
-                           href="candidate-details.html">詳細資料</a>*@
+                        @*         <a class="btn-theme btn-white btn-sm"
+                        href="candidate-details.html">詳細資料</a>*@
                         @Html.ActionLink("詳細資料", "", "", new { area = "" }, new { @class = "btn btn btn-outline-primary me-md-2" })
                     </div>
                 </div>
@@ -315,10 +324,10 @@
                         <p class="desc">
                             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                         </p>
-        @*                <a class="btn-theme btn-white btn-sm"
-                           href="candidate-details.html">詳細資料</a>*@
+                        @*                <a class="btn-theme btn-white btn-sm"
+                        href="candidate-details.html">詳細資料</a>*@
                         @Html.ActionLink("詳細資料", "", "", new { area = "" }, new { @class = "btn btn btn-outline-primary me-md-2" })
-                    </div> 
+                    </div>
                 </div>
                 <!--== End Team Item ==-->
             </div>
@@ -348,8 +357,8 @@
                         <p class="desc">
                             This is a longer card with supporting text below as a natural lead-in to additional content.
                         </p>
-@*                        <a class="btn-theme btn-white btn-sm"
-                           href="candidate-details.html">詳細資料</a>*@
+                        @*                        <a class="btn-theme btn-white btn-sm"
+                        href="candidate-details.html">詳細資料</a>*@
                         @Html.ActionLink("詳細資料", "", "", new { area = "" }, new { @class = "btn btn btn-outline-primary me-md-2" })
                     </div>
                 </div>
@@ -381,8 +390,8 @@
                         <p class="desc">
                             This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                         </p>
-               @*         <a class="btn-theme btn-white btn-sm"
-                           href="candidate-details.html">詳細資料</a>*@
+                        @*         <a class="btn-theme btn-white btn-sm"
+                        href="candidate-details.html">詳細資料</a>*@
                         @Html.ActionLink("詳細資料", "", "", new { area = "" }, new { @class = "btn btn btn-outline-primary me-md-2" })
                     </div>
                 </div>
@@ -392,280 +401,6 @@
     </div>
 </section>
 <!-- expert end -->
-
-<!-- customer start -->
-<section class="customer-section py-3">
-    <div class="container">
-        <h3>客戶怎麼說</h3>
-        <div class="row">
-            <!-- card 1 -->
-            <div class="col-md-3 col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- card 2 -->
-            <div class="col-md-3 col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- card 3 -->
-            <div class="col-md-3 col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- card 4 -->
-            <div class="col-md-3 col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- customer end -->
-
-<!--== Start Testimonial Area Wrapper ==-->
-<section class="testimonial-area bg-color-gray">
-    <div class="container" data-aos="fade-down">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title text-center">
-                    <h3 class="title">Our Happy Clients</h3>
-                    <div class="desc">
-                        <p>Many desktop publishing packages and web page editors</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="swiper testi-slider-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <!--== Start Testimonial Item ==-->
-                            <div class="testimonial-item">
-                                <div class="testi-inner-content">
-                                    <div class="testi-author">
-                                        <div class="testi-thumb">
-                                            <img src="static/picture/15.webp"
-                                                 width="75"
-                                                 height="75"
-                                                 alt="Image-HasTech" />
-                                        </div>
-                                        <div class="testi-info">
-                                            <h4 class="name">Roselia Hamets</h4>
-                                            <span class="designation">Hiring Manager</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-content">
-                                        <p class="desc">
-                                            It is a long established fact that reader will
-                                            distracted the readable content page looking at
-                                            its layout point using that has more-or-less
-                                            normal distribution of letters opposed using
-                                            content making.
-                                        </p>
-                                        <div class="rating-box">
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                        </div>
-                                        <div class="testi-quote">
-                                            <img src="static/picture/quote1.webp"
-                                                 alt="Image-HasTech" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--== End Testimonial Item ==-->
-                        </div>
-                        <div class="swiper-slide">
-                            <!--== Start Testimonial Item ==-->
-                            <div class="testimonial-item">
-                                <div class="testi-inner-content">
-                                    <div class="testi-author">
-                                        <div class="testi-thumb">
-                                            <img src="static/picture/23.webp"
-                                                 width="75"
-                                                 height="75"
-                                                 alt="Image-HasTech" />
-                                        </div>
-                                        <div class="testi-info">
-                                            <h4 class="name">Assunta Manson</h4>
-                                            <span class="designation">Hiring Manager</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-content">
-                                        <p class="desc">
-                                            It is a long established fact that reader will
-                                            distracted the readable content page looking at
-                                            its layout point using that has more-or-less
-                                            normal distribution of letters opposed using
-                                            content making.
-                                        </p>
-                                        <div class="rating-box">
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                        </div>
-                                        <div class="testi-quote">
-                                            <img src="static/picture/quote1.webp"
-                                                 alt="Image-HasTech" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--== End Testimonial Item ==-->
-                        </div>
-                        <div class="swiper-slide">
-                            <!--== Start Testimonial Item ==-->
-                            <div class="testimonial-item">
-                                <div class="testi-inner-content">
-                                    <div class="testi-author">
-                                        <div class="testi-thumb">
-                                            <img src="static/picture/33.webp"
-                                                 width="75"
-                                                 height="75"
-                                                 alt="Image-HasTech" />
-                                        </div>
-                                        <div class="testi-info">
-                                            <h4 class="name">Amira Shepard</h4>
-                                            <span class="designation">Hiring Manager</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-content">
-                                        <p class="desc">
-                                            It is a long established fact that reader will
-                                            distracted the readable content page looking at
-                                            its layout point using that has more-or-less
-                                            normal distribution of letters opposed using
-                                            content making.
-                                        </p>
-                                        <div class="rating-box">
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                        </div>
-                                        <div class="testi-quote">
-                                            <img src="static/picture/quote1.webp"
-                                                 alt="Image-HasTech" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--== End Testimonial Item ==-->
-                        </div>
-                        <div class="swiper-slide">
-                            <!--== Start Testimonial Item ==-->
-                            <div class="testimonial-item">
-                                <div class="testi-inner-content">
-                                    <div class="testi-author">
-                                        <div class="testi-thumb">
-                                            <img src="static/picture/43.webp"
-                                                 width="75"
-                                                 height="75"
-                                                 alt="Image-HasTech" />
-                                        </div>
-                                        <div class="testi-info">
-                                            <h4 class="name">Joshua George</h4>
-                                            <span class="designation">Hiring Manager</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-content">
-                                        <p class="desc">
-                                            It is a long established fact that reader will
-                                            distracted the readable content page looking at
-                                            its layout point using that has more-or-less
-                                            normal distribution of letters opposed using
-                                            content making.
-                                        </p>
-                                        <div class="rating-box">
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                        </div>
-                                        <div class="testi-quote">
-                                            <img src="static/picture/quote1.webp"
-                                                 alt="Image-HasTech" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--== End Testimonial Item ==-->
-                        </div>
-                        <div class="swiper-slide">
-                            <!--== Start Testimonial Item ==-->
-                            <div class="testimonial-item">
-                                <div class="testi-inner-content">
-                                    <div class="testi-author">
-                                        <div class="testi-thumb">
-                                            <img src="static/picture/52.webp"
-                                                 width="75"
-                                                 height="75"
-                                                 alt="Image-HasTech" />
-                                        </div>
-                                        <div class="testi-info">
-                                            <h4 class="name">Rosie Patton</h4>
-                                            <span class="designation">Hiring Manager</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-content">
-                                        <p class="desc">
-                                            It is a long established fact that reader will
-                                            distracted the readable content page looking at
-                                            its layout point using that has more-or-less
-                                            normal distribution of letters opposed using
-                                            content making.
-                                        </p>
-                                        <div class="rating-box">
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                            <i class="icofont-star"></i>
-                                        </div>
-                                        <div class="testi-quote">
-                                            <img src="static/picture/quote1.webp"
-                                                 alt="Image-HasTech" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--== End Testimonial Item ==-->
-                        </div>
-                    </div>
-
-                    <!--== Add Swiper Pagination ==-->
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--== End Testimonial Area Wrapper ==-->
 
 <!-- job_searcing_wrap start  -->
 <section class="searcing-wrap-section py-3">
@@ -692,7 +427,56 @@
 </section>
 <!-- job_searcing_wrap end  -->
 
-<!-- Section -->
+<!-- customer start -->
+<section class="customer-section py-3">
+    <div class="container">
+        <h3>客戶怎麼說</h3>
+        <div class="slider">
+            <input type="radio" name="testimonial" id="t-1">
+            <input type="radio" name="testimonial" id="t-2">
+            <input type="radio" name="testimonial" id="t-3" checked>
+            <input type="radio" name="testimonial" id="t-4">
+            <input type="radio" name="testimonial" id="t-5">
+            <div class="testimonials">
+                <label class="item" for="t-1">
+                    <img src="./Images/11.jpg" alt="picture">
+                    <p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
+                    <h2>- Princy, Web Developer</h2>
+                </label>
+                <label class="item" for="t-2">
+                    <img src="./Images/22.jpg" alt="picture">
+                    <p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
+                    <h2>- Princy, Web Developer</h2>
+                </label>
+                <label class="item" for="t-3">
+                    <img src="./Images/33.jpg" alt="picture">
+                    <p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
+                    <h2>- Princy, Web Developer</h2>
+                </label>
+                <label class="item" for="t-4">
+                    <img src="./Images/44.jpg" alt="picture">
+                    <p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
+                    <h2>- Princy, Web Developer</h2>
+                </label>
+                <label class="item" for="t-5">
+                    <img src="./Images/55.jpg" alt="picture">
+                    <p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."</p>
+                    <h2>- Princy, Web Developer</h2>
+                </label>
+            </div>
+            <div class="dots">
+                <label for="t-1"></label>
+                <label for="t-2"></label>
+                <label for="t-3"></label>
+                <label for="t-4"></label>
+                <label for="t-5"></label>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- customer end -->
+
+@*<!-- Section -->
 <section class="-section py-3 mb-4">
     <div class="container">
         <h3>文章區</h3>
@@ -736,3 +520,8 @@
         </div>
     </div>
 </section>
+<!-- Section -->*@
+
+@section Scripts{
+
+                }

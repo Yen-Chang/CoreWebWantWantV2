@@ -313,3 +313,15 @@ a:link {
 .text-uppercase{
     color:#FFF;
 }
+
+.job_listing_area {
+    background: #FFF;
+}
+
+.img-width {
+    width: 600px;
+}
+
+.form-control {
+    height: 40px;
+}

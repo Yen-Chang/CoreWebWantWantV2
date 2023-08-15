@@ -201,12 +201,24 @@
       "PackagePath": "staticwebassets\\Images\\3.jpg"
     },
     {
+      "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\33.jpg",
+      "PackagePath": "staticwebassets\\Images\\33.jpg"
+    },
+    {
       "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\4.jpg",
       "PackagePath": "staticwebassets\\Images\\4.jpg"
     },
     {
+      "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\44.jpg",
+      "PackagePath": "staticwebassets\\Images\\44.jpg"
+    },
+    {
       "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\5.jpg",
       "PackagePath": "staticwebassets\\Images\\5.jpg"
+    },
+    {
+      "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\55.jpg",
+      "PackagePath": "staticwebassets\\Images\\55.jpg"
     },
     {
       "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\6.jpg",
@@ -225,8 +237,16 @@
       "PackagePath": "staticwebassets\\Images\\LOGO.png"
     },
     {
-      "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\main_title.png",
-      "PackagePath": "staticwebassets\\Images\\main_title.png"
+      "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Images\\main-title.jpg",
+      "PackagePath": "staticwebassets\\Images\\main-title.jpg"
+    },
+    {
+      "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Mstyles\\Carousel.css",
+      "PackagePath": "staticwebassets\\Mstyles\\Carousel.css"
+    },
+    {
+      "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Mstyles\\Jstyle.css",
+      "PackagePath": "staticwebassets\\Mstyles\\Jstyle.css"
     },
     {
       "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Mstyles\\Mbootstrap.css",
