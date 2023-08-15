@@ -261,6 +261,10 @@
       "PackagePath": "staticwebassets\\Mstyles\\icofont.css"
     },
     {
+      "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Mstyles\\index.css",
+      "PackagePath": "staticwebassets\\Mstyles\\index.css"
+    },
+    {
       "Id": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Mstyles\\style.css",
       "PackagePath": "staticwebassets\\Mstyles\\style.css"
     },

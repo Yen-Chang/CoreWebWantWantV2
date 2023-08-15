@@ -11,10 +11,10 @@
 
     <!--== CSS Styles ==-->
     <link rel="stylesheet" href="~/Mstyles/Mbootstrap.css" asp-append-version="true" />
-    @await RenderSectionAsync("Styles", required: false)
-@*    <link rel="stylesheet" href="~/Mstyles/style.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Mstyles/Carousel.css" asp-append-version="true" />*@
+    <link rel="stylesheet" href="~/Mstyles/style.css" asp-append-version="true" />
+@*    <link rel="stylesheet" href="~/Mstyles/Carousel.css" asp-append-version="true" />*@
     <link rel="stylesheet" href="~/Mstyles/Mstyle.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
 
 
 </head>
@@ -38,13 +38,13 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">首頁</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">找工作</a>
+                            <a class="nav-link text-dark nav-a-link" asp-area="" asp-controller="" asp-action="">找工作</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">找專家</a>
+                            <a class="nav-link text-dark nav-a-link" asp-area="" asp-controller="" asp-action="">找專家</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">部落格</a>
+                            <a class="nav-link text-dark nav-a-link" asp-area="" asp-controller="" asp-action="">部落格</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
@@ -77,25 +77,25 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 footer-list">
                     <img src="~/Images/LOGO.png" class="img-fluid" alt="Logo"><br>
-                    <a href="mailto:service@wantwant.com">service@wantwant.com</a>
+                    <a href="mailto:service@wantwant.com" class="a-email">service@wantwant.com</a>
                 </div>
                 <div class="col-md-3 col-sm-6 footer-list">
                     <h5 class="text-uppercase fw-bold">Company</h5>
                     <ul class="footer-menu py-3">
                         <li>
-                            @Html.ActionLink("Careers", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("Careers", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                         <li>
-                            @Html.ActionLink("About Us", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("About Us", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                         <li>
-                            @Html.ActionLink("Blog", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("Blog", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                         <li>
-                            @Html.ActionLink("Press", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("Press", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                         <li>
-                            @Html.ActionLink("Bonus", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("Bonus", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                     </ul>
                 </div>
@@ -103,13 +103,13 @@
                     <h5 class="text-uppercase fw-bold">Product</h5>
                     <ul class="footer-menu py-3">
                         <li>
-                            @Html.ActionLink("Enterprice", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("Enterprice", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                         <li>
-                            @Html.ActionLink("Pricing", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("Pricing", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                         <li>
-                            @Html.ActionLink("Security", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("Security", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                     </ul>
                 </div>
@@ -117,16 +117,16 @@
                     <h5 class="text-uppercase fw-bold">Resource</h5>
                     <ul class="footer-menu py-3">
                         <li>
-                            @Html.ActionLink("Guilde", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("Guilde", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                         <li>
-                            @Html.ActionLink("Help Center", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("Help Center", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                         <li>
-                            @Html.ActionLink("API", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("API", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                         <li>
-                            @Html.ActionLink("Events", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                            @Html.ActionLink("Events", "List", "Customer", new { area = "" }, new { @class = "footer-a-link" })
                         </li>
                     </ul>
                 </div>

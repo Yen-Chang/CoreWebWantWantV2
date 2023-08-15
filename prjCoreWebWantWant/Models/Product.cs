@@ -13,8 +13,6 @@ public partial class Product
 
     public int? UnitPrice { get; set; }
 
-    public byte[]? CoverPhoto { get; set; }
-
     public string? ProductDesc { get; set; }
 
     public string? Status { get; set; }
@@ -32,6 +30,8 @@ public partial class Product
     public int? UnitPoint { get; set; }
 
     public int? GetPoint { get; set; }
+
+    public string? CoverPhoto { get; set; }
 
     public virtual Category? Category { get; set; }
 

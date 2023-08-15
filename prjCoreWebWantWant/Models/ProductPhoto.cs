@@ -9,9 +9,7 @@ public partial class ProductPhoto
 
     public int? ProductId { get; set; }
 
-    public string? ProductPhotoName { get; set; }
-
-    public byte[]? ProductPhoto1 { get; set; }
+    public string? ProductPhoto1 { get; set; }
 
     public virtual Product? Product { get; set; }
 }

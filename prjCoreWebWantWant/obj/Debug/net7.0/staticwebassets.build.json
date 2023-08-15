@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PbRO6zs3UDJmTxOtnjYbMZI4mkMTNKx5ZeN58Gc9Rjg=",
+  "Hash": "f9+Tw18G7i2D7+Zy4Oy67peVfYxPEKezJ/UiVny2N9w=",
   "Source": "prjCoreWebWantWant",
   "BasePath": "_content/prjCoreWebWantWant",
   "Mode": "Default",
@@ -2310,6 +2310,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Mstyles\\icofont.css"
+    },
+    {
+      "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Mstyles\\index.css",
+      "SourceId": "prjCoreWebWantWant",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\",
+      "BasePath": "_content/prjCoreWebWantWant",
+      "RelativePath": "Mstyles/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Mstyles\\index.css"
     },
     {
       "Identity": "E:\\Desktop\\CoreWebWantWantV2\\prjCoreWebWantWant\\wwwroot\\Mstyles\\Jstyle.css",

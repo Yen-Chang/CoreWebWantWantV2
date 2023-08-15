@@ -77,6 +77,10 @@ public partial class NewIspanProjectContext : DbContext
 
     public virtual DbSet<PayWay> PayWays { get; set; }
 
+    public virtual DbSet<Payment> Payments { get; set; }
+
+    public virtual DbSet<PaymentDate> PaymentDates { get; set; }
+
     public virtual DbSet<Product> Products { get; set; }
 
     public virtual DbSet<ProductPhoto> ProductPhotos { get; set; }
@@ -105,6 +109,8 @@ public partial class NewIspanProjectContext : DbContext
 
     public virtual DbSet<StatusChangeReasonList> StatusChangeReasonLists { get; set; }
 
+    public virtual DbSet<TaskCertificate> TaskCertificates { get; set; }
+
     public virtual DbSet<TaskKeywordList> TaskKeywordLists { get; set; }
 
     public virtual DbSet<TaskList> TaskLists { get; set; }
@@ -112,6 +118,8 @@ public partial class NewIspanProjectContext : DbContext
     public virtual DbSet<TaskNameList> TaskNameLists { get; set; }
 
     public virtual DbSet<TaskPhoto> TaskPhotos { get; set; }
+
+    public virtual DbSet<TaskSkill> TaskSkills { get; set; }
 
     public virtual DbSet<Town> Towns { get; set; }
 
@@ -403,9 +411,7 @@ public partial class NewIspanProjectContext : DbContext
             entity.Property(e => e.ParentId).HasColumnName("ParentID");
             entity.Property(e => e.Status).HasDefaultValueSql("((1))");
             entity.Property(e => e.Title).HasMaxLength(100);
-            entity.Property(e => e.Updated)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime");
+            entity.Property(e => e.Updated).HasColumnType("datetime");
             entity.Property(e => e.ViewCount).HasDefaultValueSql("((0))");
 
             entity.HasOne(d => d.Account).WithMany(p => p.ForumPosts)
@@ -712,12 +718,33 @@ public partial class NewIspanProjectContext : DbContext
             entity.Property(e => e.PayWayName).HasMaxLength(50);
         });
 
+        modelBuilder.Entity<Payment>(entity =>
+        {
+            entity.ToTable("Payment");
+
+            entity.Property(e => e.PaymentId).HasColumnName("PaymentID");
+            entity.Property(e => e.Payment1)
+                .HasMaxLength(50)
+                .HasColumnName("Payment");
+        });
+
+        modelBuilder.Entity<PaymentDate>(entity =>
+        {
+            entity.ToTable("PaymentDate");
+
+            entity.Property(e => e.PaymentDateId).HasColumnName("PaymentDateID");
+            entity.Property(e => e.PaymentDate1)
+                .HasMaxLength(50)
+                .HasColumnName("PaymentDate");
+        });
+
         modelBuilder.Entity<Product>(entity =>
         {
             entity.ToTable("Product");
 
             entity.Property(e => e.ProductId).HasColumnName("ProductID");
             entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
+            entity.Property(e => e.CoverPhoto).HasMaxLength(50);
             entity.Property(e => e.PostEndDate).HasColumnType("datetime");
             entity.Property(e => e.PostStartDate).HasColumnType("datetime");
             entity.Property(e => e.ProductName).HasMaxLength(50);
@@ -735,8 +762,9 @@ public partial class NewIspanProjectContext : DbContext
 
             entity.Property(e => e.ProductPhotoId).HasColumnName("ProductPhotoID");
             entity.Property(e => e.ProductId).HasColumnName("ProductID");
-            entity.Property(e => e.ProductPhoto1).HasColumnName("ProductPhoto");
-            entity.Property(e => e.ProductPhotoName).HasMaxLength(50);
+            entity.Property(e => e.ProductPhoto1)
+                .HasMaxLength(50)
+                .HasColumnName("ProductPhoto");
 
             entity.HasOne(d => d.Product).WithMany(p => p.ProductPhotos)
                 .HasForeignKey(d => d.ProductId)
@@ -873,8 +901,8 @@ public partial class NewIspanProjectContext : DbContext
             entity.ToTable("Salary");
 
             entity.Property(e => e.SalaryId).HasColumnName("SalaryID");
-            entity.Property(e => e.Payment).HasMaxLength(50);
-            entity.Property(e => e.PaymentDate).HasColumnType("date");
+            entity.Property(e => e.PaymentDateId).HasColumnName("PaymentDateID");
+            entity.Property(e => e.PaymentId).HasColumnName("PaymentID");
         });
 
         modelBuilder.Entity<ServiceContact>(entity =>
@@ -928,6 +956,20 @@ public partial class NewIspanProjectContext : DbContext
             entity.Property(e => e.StatusChangeReason).HasMaxLength(50);
         });
 
+        modelBuilder.Entity<TaskCertificate>(entity =>
+        {
+            entity.ToTable("TaskCertificate");
+
+            entity.Property(e => e.TaskCertificateId).HasColumnName("TaskCertificateID");
+            entity.Property(e => e.CaseId).HasColumnName("CaseID");
+            entity.Property(e => e.CertficateId).HasColumnName("CertficateID");
+
+            entity.HasOne(d => d.Case).WithMany(p => p.TaskCertificates)
+                .HasForeignKey(d => d.CaseId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_TaskCertificate_TaskList");
+        });
+
         modelBuilder.Entity<TaskKeywordList>(entity =>
         {
             entity.ToTable("TaskKeywordList");
@@ -955,27 +997,45 @@ public partial class NewIspanProjectContext : DbContext
             entity.Property(e => e.AccountId).HasColumnName("AccountID");
             entity.Property(e => e.Address).HasMaxLength(50);
             entity.Property(e => e.CaseStatusId).HasColumnName("CaseStatusID");
-            entity.Property(e => e.CertificateRequiredId).HasColumnName("CertificateRequiredID");
             entity.Property(e => e.DataCreateDate).HasMaxLength(50);
             entity.Property(e => e.DataModifyDate).HasMaxLength(50);
             entity.Property(e => e.DataModifyPerson).HasMaxLength(50);
             entity.Property(e => e.HumanList).HasMaxLength(50);
             entity.Property(e => e.LanguageRequired).HasMaxLength(50);
+            entity.Property(e => e.PaymentDateId).HasColumnName("PaymentDateID");
+            entity.Property(e => e.PaymentId).HasColumnName("PaymentID");
             entity.Property(e => e.PublishEnd).HasMaxLength(50);
             entity.Property(e => e.PublishOrNot).HasMaxLength(50);
             entity.Property(e => e.PublishStart).HasMaxLength(50);
             entity.Property(e => e.RequiredNum).HasMaxLength(50);
             entity.Property(e => e.Requirement).HasMaxLength(50);
             entity.Property(e => e.SalaryId).HasColumnName("SalaryID");
-            entity.Property(e => e.SkillRequiredId).HasColumnName("SkillRequiredID");
             entity.Property(e => e.StatusChangeReasonId).HasColumnName("StatusChangeReasonID");
-            entity.Property(e => e.TaskEnd).HasMaxLength(50);
+            entity.Property(e => e.TaskEndDate).HasMaxLength(50);
+            entity.Property(e => e.TaskEndHour).HasMaxLength(50);
             entity.Property(e => e.TaskNameId).HasColumnName("TaskNameID");
             entity.Property(e => e.TaskPeriod).HasMaxLength(50);
-            entity.Property(e => e.TaskStart).HasMaxLength(50);
+            entity.Property(e => e.TaskStartDate).HasMaxLength(50);
+            entity.Property(e => e.TaskStartHour).HasMaxLength(50);
             entity.Property(e => e.TaskTitle).HasMaxLength(50);
             entity.Property(e => e.TownId).HasColumnName("TownID");
             entity.Property(e => e.WorkingHoursId).HasColumnName("WorkingHoursID");
+
+            entity.HasOne(d => d.PaymentDate).WithMany(p => p.TaskLists)
+                .HasForeignKey(d => d.PaymentDateId)
+                .HasConstraintName("FK_TaskList_PaymentDate");
+
+            entity.HasOne(d => d.Payment).WithMany(p => p.TaskLists)
+                .HasForeignKey(d => d.PaymentId)
+                .HasConstraintName("FK_TaskList_Payment");
+
+            entity.HasOne(d => d.Salary).WithMany(p => p.TaskLists)
+                .HasForeignKey(d => d.SalaryId)
+                .HasConstraintName("FK_TaskList_Salary");
+
+            entity.HasOne(d => d.Town).WithMany(p => p.TaskLists)
+                .HasForeignKey(d => d.TownId)
+                .HasConstraintName("FK_TaskList_Town");
         });
 
         modelBuilder.Entity<TaskNameList>(entity =>
@@ -1001,6 +1061,20 @@ public partial class NewIspanProjectContext : DbContext
                 .HasForeignKey(d => d.CaseId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_TaskPhoto_TaskList");
+        });
+
+        modelBuilder.Entity<TaskSkill>(entity =>
+        {
+            entity.ToTable("TaskSkill");
+
+            entity.Property(e => e.TaskSkillId).HasColumnName("TaskSkillID");
+            entity.Property(e => e.CaseId).HasColumnName("CaseID");
+            entity.Property(e => e.SkillId).HasColumnName("SkillID");
+
+            entity.HasOne(d => d.Case).WithMany(p => p.TaskSkills)
+                .HasForeignKey(d => d.CaseId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_TaskSkill_TaskList");
         });
 
         modelBuilder.Entity<Town>(entity =>

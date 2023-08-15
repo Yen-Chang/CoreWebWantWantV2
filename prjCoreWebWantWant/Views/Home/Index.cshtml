@@ -1,9 +1,12 @@
-﻿@{
+﻿@using prjCoreWebWantWant.ViewModels
+@model IEnumerable<CIndexInfoViewModel>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 @section Styles{
-    <link rel="stylesheet" href="~/Mstyles/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Mstyles/index.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Mstyles/Carousel.css" asp-append-version="true" />
 }
 
@@ -83,7 +86,9 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Software Engineer</h4></a>
+                                    <a href="job_details.html">
+                                        <h4>@Html.DisplayNameFor(model => model.taskList.TaskTitle)</h4>
+                                        </a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
                                             <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -515,6 +520,7 @@
 </section>
 <!-- Section -->*@
 
-@section Scripts{
+                @foreach(var item in Model){
+@*    <h4>@Html.DisplayFor(modelItem => item.taskList.TaskTitle)</h4>*@
 
                 }

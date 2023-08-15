@@ -7,7 +7,9 @@ public partial class Salary
 {
     public int SalaryId { get; set; }
 
-    public string? Payment { get; set; }
+    public int PaymentId { get; set; }
 
-    public DateTime? PaymentDate { get; set; }
+    public int PaymentDateId { get; set; }
+
+    public virtual ICollection<TaskList> TaskLists { get; set; } = new List<TaskList>();
 }

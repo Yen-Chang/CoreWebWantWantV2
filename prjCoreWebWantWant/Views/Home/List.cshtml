@@ -1,0 +1,233 @@
+﻿@model IEnumerable<prjCoreWebWantWant.Models.TaskList>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskNameId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskDetail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WorkingHoursId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PayFrom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PayTo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskPlace)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WorkPlace)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequiredNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskPeriod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskStartHour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskEndHour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskStartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskEndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Requirement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HumanList)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LanguageRequired)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusChangeReasonId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublishOrNot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublishStart)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublishEnd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CaseStatusId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OnTop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataCreateDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataModifyDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataModifyPerson)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsExpert)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Town)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskNameId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskDetail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkingHoursId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PayFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PayTo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskPlace)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkPlace)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequiredNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskPeriod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskStartHour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskEndHour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskStartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaskEndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Requirement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HumanList)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LanguageRequired)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServiceStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusChangeReasonId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishOrNot)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishStart)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishEnd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CaseStatusId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OnTop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCreateDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataModifyDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataModifyPerson)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsExpert)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Payment.PaymentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaymentDate.PaymentDateId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salary.SalaryId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Town.TownId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CaseId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CaseId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CaseId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

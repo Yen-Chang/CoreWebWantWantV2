@@ -21,6 +21,10 @@ public partial class TaskList
 
     public int? PayTo { get; set; }
 
+    public int? PaymentId { get; set; }
+
+    public int? PaymentDateId { get; set; }
+
     public int? SalaryId { get; set; }
 
     public int? TaskPlace { get; set; }
@@ -35,19 +39,19 @@ public partial class TaskList
 
     public string? TaskPeriod { get; set; }
 
-    public string? TaskStart { get; set; }
+    public string? TaskStartHour { get; set; }
 
-    public string? TaskEnd { get; set; }
+    public string? TaskEndHour { get; set; }
+
+    public string? TaskStartDate { get; set; }
+
+    public string? TaskEndDate { get; set; }
 
     public string? Requirement { get; set; }
 
     public string? HumanList { get; set; }
 
     public string? LanguageRequired { get; set; }
-
-    public int? SkillRequiredId { get; set; }
-
-    public int? CertificateRequiredId { get; set; }
 
     public bool? ServiceStatus { get; set; }
 
@@ -81,7 +85,19 @@ public partial class TaskList
 
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
 
+    public virtual Payment? Payment { get; set; }
+
+    public virtual PaymentDate? PaymentDate { get; set; }
+
+    public virtual Salary? Salary { get; set; }
+
+    public virtual ICollection<TaskCertificate> TaskCertificates { get; set; } = new List<TaskCertificate>();
+
     public virtual ICollection<TaskKeywordList> TaskKeywordLists { get; set; } = new List<TaskKeywordList>();
 
     public virtual ICollection<TaskPhoto> TaskPhotos { get; set; } = new List<TaskPhoto>();
+
+    public virtual ICollection<TaskSkill> TaskSkills { get; set; } = new List<TaskSkill>();
+
+    public virtual Town? Town { get; set; }
 }
