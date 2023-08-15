@@ -5,10 +5,13 @@ namespace prjCoreWebWantWant.ViewModels
     public class CIndexInfoViewModel
     {
         public TaskList taskList { get; set; }
+        public Rating rating { get; set; }
         public ExpertResume expertResume { get; set; }
         public ExpertWorkList expertWorkList { get; set; }
         //Resume
         public Resume resume { get; set; }
+        //MemberAccount
+        public MemberAccount memberAccount { get; set; }
         public string townName
         {
             get
@@ -28,7 +31,5 @@ namespace prjCoreWebWantWant.ViewModels
                 return cityNameList;
             }
         }
-        //MemberAccount
-        public MemberAccount memberAccount { get; set; }
     }
 }

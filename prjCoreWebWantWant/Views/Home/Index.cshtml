@@ -1,13 +1,15 @@
-﻿@using prjCoreWebWantWant.ViewModels
-@model IEnumerable<CIndexInfoViewModel>
+﻿@*@using prjCoreWebWantWant.ViewModels
+@model IEnumerable<CIndexInfoViewModel>*@
+@model prjCoreWebWantWant.ViewModels.CIndexInfoViewModel
 
 @{
     ViewData["Title"] = "Home Page";
 }
 
 @section Styles{
-    <link rel="stylesheet" href="~/Mstyles/index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />   
     <link rel="stylesheet" href="~/Mstyles/Carousel.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Mstyles/index.css" asp-append-version="true" />
 }
 
 <!-- main-title start -->
@@ -87,7 +89,8 @@
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="jobs_conetent">
                                     <a href="job_details.html">
-                                        <h4>@Html.DisplayNameFor(model => model.taskList.TaskTitle)</h4>
+                                        <h4>Software Engineer</h4>
+                                        @*<h4>@Html.DisplayFor(model => model.taskList.TaskTitle)</h4>*@                                       
                                         </a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
@@ -101,9 +104,9 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    @*<a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>*@
-                                    <a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>
+                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
                                 <div class="date">
                                     <p>Date line: 31 Jan 2020</p>
@@ -115,7 +118,9 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Digital Marketer</h4></a>
+                                    <a href="job_details.html">
+                                        <h4>Digital Marketer</h4>
+                                        </a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
                                             <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -128,9 +133,9 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    @*<a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>*@
-                                    <a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>
+                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
                                 <div class="date">
                                     <p>Date line: 31 Jan 2020</p>
@@ -142,7 +147,9 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Wordpress Developer</h4></a>
+                                    <a href="job_details.html">
+                                        <h4>Wordpress Developer</h4>
+                                        </a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
                                             <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -155,9 +162,9 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    @*<a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>*@
-                                    <a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>
+                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
                                 <div class="date">
                                     <p>Date line: 31 Jan 2020</p>
@@ -169,7 +176,9 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Visual Designer</h4></a>
+                                    <a href="job_details.html">
+                                        <h4>Visual Designer</h4>
+                                        </a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
                                             <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -182,9 +191,9 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    @*  <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>*@
-                                    <a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>
+                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
                                 <div class="date">
                                     <p>Date line: 31 Jan 2020</p>
@@ -196,7 +205,9 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Software Engineer</h4></a>
+                                    <a href="job_details.html">
+                                        <h4>Software Engineer</h4>
+                                        </a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
                                             <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -209,9 +220,9 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    @*<a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>*@
-                                    <a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>
+                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
                                 <div class="date">
                                     <p>Date line: 31 Jan 2020</p>
@@ -223,7 +234,9 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Creative Designer</h4></a>
+                                    <a href="job_details.html">
+                                        <h4>Creative Designer</h4>
+                                        </a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
                                             <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -236,9 +249,9 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    @*<a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>*@
-                                    <a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>
+                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
                                 <div class="date">
                                     <p>Date line: 31 Jan 2020</p>
@@ -520,7 +533,7 @@
 </section>
 <!-- Section -->*@
 
-                @foreach(var item in Model){
-@*    <h4>@Html.DisplayFor(modelItem => item.taskList.TaskTitle)</h4>*@
+@*                @foreach(var item in Model){
+    <h4>@Html.DisplayFor(modelItem => item.taskList.TaskTitle)</h4>
 
-                }
+                }*@
