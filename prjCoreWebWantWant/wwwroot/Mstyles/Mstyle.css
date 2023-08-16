@@ -1,4 +1,10 @@
-﻿.btn-primary {
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.btn-primary {
     background-image: linear-gradient(#528EAF, #446e9b 50%, #3f658f);
     filter: none;
     border: 1px solid #36587c;

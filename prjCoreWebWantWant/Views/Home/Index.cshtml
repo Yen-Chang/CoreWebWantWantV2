@@ -1,5 +1,5 @@
-﻿@*@using prjCoreWebWantWant.ViewModels
-@model IEnumerable<CIndexInfoViewModel>*@
+﻿@* @using prjCoreWebWantWant.ViewModels
+@model IEnumerable<CIndexInfoViewModel> *@
 @model prjCoreWebWantWant.ViewModels.CIndexInfoViewModel
 
 @{
@@ -72,6 +72,10 @@
 <!-- search end -->
 
 <!-- job-listing start  -->
+@* @foreach (var item in Model)
+{ *@
+
+
 <section class="job_listing-section py-3">
     <div class="job_listing_area">
         <div class="container">
@@ -89,8 +93,8 @@
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="jobs_conetent">
                                     <a href="job_details.html">
-                                        <h4>Software Engineer</h4>
-                                        @*<h4>@Html.DisplayFor(model => model.taskList.TaskTitle)</h4>*@                                       
+                                        @* <h4>Software Engineer</h4> *@
+                                        <h4>@Html.DisplayFor(model => model.taskList.TaskTitle)</h4>                                       
                                         </a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
@@ -104,7 +108,7 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    @* <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a> *@
                                     <a href="job_details.html" class="boxed-btn3">Apply Now</a>
                                     @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
@@ -133,7 +137,7 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    @* <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a> *@
                                     <a href="job_details.html" class="boxed-btn3">Apply Now</a>
                                     @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
@@ -162,7 +166,7 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    @* <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a> *@
                                     <a href="job_details.html" class="boxed-btn3">Apply Now</a>
                                     @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
@@ -191,7 +195,7 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    @* <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a> *@
                                     <a href="job_details.html" class="boxed-btn3">Apply Now</a>
                                     @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
@@ -220,7 +224,7 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    @* <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a> *@
                                     <a href="job_details.html" class="boxed-btn3">Apply Now</a>
                                     @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
@@ -249,7 +253,7 @@
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
-                                    <a class="heart_mark" href="#"> @*<i class="ti-heart"></i>*@ </a>
+                                    @* <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a> *@
                                     <a href="job_details.html" class="boxed-btn3">Apply Now</a>
                                     @*<a>@Html.ActionLink("Apply Now", "Index", "Home", new { area = "" }, new { @class = "boxed-btn3" })</a>*@
                                 </div>
@@ -266,6 +270,7 @@
     <!-- job_listing_area_end  -->
 </section>
 <!-- job-listing end  -->
+
 
 <!-- expert start -->
 <section class="expert-section py-3">
